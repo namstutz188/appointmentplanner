@@ -13,7 +13,7 @@ export const ContactsPage = ({contacts,addContact}) => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
   const [isDuplicate,setIsDuplicate] = useState(false);
-  useEffect(() => {
+  useEffect((contacts) => {
     let isDup = false; //initialize to false
     for (let i = 0; i < contacts.length; ++i) {
       if (contacts[i].name === name) {
