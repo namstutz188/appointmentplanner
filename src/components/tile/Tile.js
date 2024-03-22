@@ -11,6 +11,8 @@ export const Tile = ({name, description}) => {
           Object.keys(description).map((key,i) => {
             if (key !== 'name') {
               return <p className = 'tile' key = {i}>{description[key]}</p>;
+            } else {
+              return <></>;
             }
         })
       }
