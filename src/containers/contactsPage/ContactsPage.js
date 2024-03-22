@@ -23,7 +23,7 @@ export const ContactsPage = ({contacts,addContact}) => {
     }
 
     setIsDuplicate(isDup);
-  },[name]) //only run upon name changing!
+  },[name]); //only run upon name changing!
 
   const handleSubmit = (e) => {
     e.preventDefault();
